@@ -12,20 +12,10 @@
 
 int main(int argc, char **argv) {
 	Systeem systeem;
-	Auto a(1, "1","1");
-
-	Auto b(2, "2","2");
-
-	Auto c(3, "3","3");
-
-	Auto d(4, "4","4");
-
-	systeem.autoLijst.push_back(a);
-	systeem.autoLijst.push_back(b);
-	systeem.autoLijst.push_back(c);
-	systeem.autoLijst.push_back(d);
-	systeem.getAutos();
-
+	systeem.maakVoorbeeldPopulatie();
+	systeem.getKlanten();
+	systeem.getBeschikbareAutos();
+	systeem.getAbonnementenPerKlant();
 }
 
 

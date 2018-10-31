@@ -31,6 +31,11 @@ void Auto::setKenteken(std::string nieuweKenteken) {
 }
 
 void Auto::setGereserveerd() {
+	if(gereserveerd){
+		gereserveerd = false;
+	}else{
+		gereserveerd = true;
+	}
 }
 
 void Auto::koppelPas() {
@@ -40,4 +45,20 @@ void Auto::ontgrendel() {
 	if(vergrendeld){
 		vergrendeld = false;
 	}
+}
+
+bool Auto::isGereserveerd() const {
+	return gereserveerd;
+}
+
+const std::string& Auto::getKenteken() const {
+	return kenteken;
+}
+
+int Auto::getNummer() const {
+	return nummer;
+}
+
+const std::string& Auto::getType() const {
+	return type;
 }

@@ -19,20 +19,13 @@ public:
 	void setType(std::string nieuwType);
 	void setKenteken(std::string nieuwKenteken);
 	void setGereserveerd();
+
 	void koppelPas();
 	void ontgrendel();
-
-	const std::string& getKenteken() const {
-		return kenteken;
-	}
-
-	int getNummer() const {
-		return nummer;
-	}
-
-	const std::string& getType() const {
-		return type;
-	}
+	bool isGereserveerd() const;
+	const std::string& getKenteken() const;
+	int getNummer() const;
+	const std::string& getType() const;
 
 	Gps gps;
 

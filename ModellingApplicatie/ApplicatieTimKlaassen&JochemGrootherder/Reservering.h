@@ -9,17 +9,18 @@
 #define RESERVERING_H_
 #include "klant.h"
 
+
 class Reservering {
 public:
 	Reservering();
 	virtual ~Reservering();
 
-	void reserveerAuto(int begintijd, int eindtijd, const Abonnement& abonnement, int autoNummer);
+	void reserveerAuto(int begintijd, int eindtijd, int autoNummer, std::string typeAbonnement);
 private:
 	int begintijd;
 	int eindtijd;
-	int pasnummer;
-	Abonnement abonnement;
+	int autoNummer;
+	std::string typeAbonnement;
 };
 
 #endif /* RESERVERING_H_ */

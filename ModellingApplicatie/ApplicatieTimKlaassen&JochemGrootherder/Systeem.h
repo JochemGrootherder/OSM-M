@@ -19,11 +19,14 @@ public:
 	virtual ~Systeem();
 
 	void berekenKosten();
-	void getAutos();
-	std::vector<Auto> autoLijst;
-private:
+	void getBeschikbareAutos();
+	void getKlanten();
+	void getAbonnementenPerKlant();
 
-	std::vector<Klant> klantenlijst;
+	void maakVoorbeeldPopulatie();
+private:
+	std::vector<Auto> autoLijst;
+	std::vector<Klant> klantenLijst;
 };
 
 #endif /* SYSTEEM_H_ */

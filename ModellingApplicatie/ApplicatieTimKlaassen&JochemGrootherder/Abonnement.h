@@ -7,16 +7,20 @@
 
 #ifndef ABONNEMENT_H_
 #define ABONNEMENT_H_
+#include<string>
 
 class Abonnement {
 public:
-	Abonnement();
+	Abonnement(int beginDatum, int eindDatum, std::string type);
 	virtual ~Abonnement();
+	int getBeginDatum() const;
+	int getEindDatum() const;
+	const std::string& getType() const;
 
 private:
 	int beginDatum;
 	int eindDatum;
-	int type;
+	std::string type;
 };
 
 #endif /* ABONNEMENT_H_ */

@@ -16,6 +16,10 @@ Reservering::~Reservering() {
 	// TODO Auto-generated destructor stub
 }
 
-void Reservering::reserveerAuto(int begintijd, int eindtijd,
-		const Abonnement& abonnement, int nummerAuto) {
+void Reservering::reserveerAuto(int begintijd, int eindtijd, int autoNummer,
+		std::string typeAbonnement) :
+		begintijd(begintijd), eindtijd(eindtijd), autoNummer(autoNummer), typeAbonnement(
+				typeAbonnement) {
+
 }
+
